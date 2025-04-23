@@ -9,7 +9,14 @@ A ready to use Airflow and Spark stack
 
 3. Acess Airflow UI on localhost:8088 (8080 port being used for spark UI) user password combo is the following `airflow:airflow`
 
-4. Put your dags in `dags/` and your spark jobs in `spark_jobs/`
+4. Configure the spark connection in Admin>Connections :
+```
+Conn ID : spark_default
+Conn Type : Spark
+Host : spark://spark-master:7077
+```
+
+5. Put your dags in `dags/` and your spark jobs in `spark_jobs/`
 
 ## Disclaimer
 
